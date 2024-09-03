@@ -6,6 +6,6 @@ Throughout the process of learning these web technologies, I encountered several
 
 One concept that really stood out was the idea of "feature branches" and how they help keep the main branch stable while allowing for parallel development. This approach is something I plan to incorporate into my future projects to ensure better project management and cleaner code.
 
-Overall, this experience has been incredibly valuable, and I am eager to continue applying these techniques in my future work.
+Overall, this experience has been incredibly valuable, and I am eager to continue applying these techniques in my future work///
 
 
