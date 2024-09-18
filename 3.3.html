@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+    <h1>Анкета користувача</h1>
+    <form action="current_page.html" method="get" enctype="multipart/form-data">
+        <!-- Персональні дані -->
+        <fieldset>
+            <legend>Персональні дані</legend>
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="user_name" placeholder="Ваше ім'я" required><br>
+
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="user_surname" placeholder="Ваше прізвище" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email" placeholder="example@example.com" autocomplete="off" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="user_phone" placeholder="+380XXXXXXXXX" required pattern="\+380[0-9]{9}"><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="user_password" placeholder="Ваш пароль" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br>
+
+            <label for="birthdate">Дата народження:</label>
+            <input type="date" id="birthdate" name="user_birthdate"><br>
+        </fieldset>
+
+        <!-- Інтереси -->
+        <fieldset>
+            <legend>Ваші інтереси</legend>
+
+            <label>Виберіть вашу стать:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Чоловік</label><br>
+            <input type="radio" id="female" name="gender" value="female" checked>
+            <label for="female">Жінка</label><br>
+
+            <label for="hobbies">Ваші хобі:</label><br>
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="reading">Читання</label><br>
+            <input type="checkbox" id="sports" name="hobby" value="sports">
+            <label for="sports">Спорт</label><br>
+            <input type="checkbox" id="gaming" name="hobby" value="gaming">
+            <label for="gaming">Ігри</label><br>
+            <input type="checkbox" id="traveling" name="hobby" value="traveling">
+            <label for="traveling">Подорожі</label><br>
+
+            <label for="country">Ваше улюблене місто:</label>
+            <select id="city" name="user_city">
+                <option value="kyiv">Київ</option>
+                <option value="lviv">Львів</option>
+                <option value="odessa" selected>Одеса</option>
+                <option value="kharkiv">Харків</option>
+                <option value="dnepr">Дніпро</option>
+            </select><br>
+
+            <label for="languages">Які мови ви знаєте?</label>
+            <select id="languages" name="languages" multiple>
+                <option value="ukrainian">Українська</option>
+                <option value="english">Англійська</option>
+                <option value="german">Німецька</option>
+                <option value="french">Французька</option>
+                <option value="polish">Польська</option>
+            </select><br>
+
+            <label for="education">Ваш рівень освіти:</label>
+            <select id="education" name="user_education">
+                <optgroup label="Шкільна освіта">
+                    <option value="middle_school">Середня школа</option>
+                    <option value="high_school">Старша школа</option>
+                    <option value="vocational_school">Професійна школа</option>
+                </optgroup>
+                <optgroup label="Вища освіта">
+                    <option value="bachelor">Бакалавр</option>
+                    <option value="master">Магістр</option>
+                    <option value="phd">Доктор філософії</option>
+                </optgroup>
+            </select><br>
+
+Ваня, [17.09.2024 19:56]
+<label for="browser">Який браузер ви використовуєте?</label>
+            <input list="browsers" name="user_browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Opera">
+                <option value="Edge">
+            </datalist><br>
+        </fieldset>
+
+        <!-- Завантаження файлів -->
+        <fieldset>
+            <legend>Завантаження файлів</legend>
+
+            <label for="audio">Завантажте аудіофайли:</label>
+            <input type="file" id="audio" name="audio_files" accept="audio/*" multiple><br>
+        </fieldset>
+
+        <!-- Кнопки -->
+        <button type="submit">Надіслати</button>
+        <button type="reset">Скинути</button>
+    </form>
+    <button onclick="window.location.href='main.html'">Повернутися на головну</button>
+</body>
+</html>
