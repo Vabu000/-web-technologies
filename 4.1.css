@@ -1,0 +1,56 @@
+/* 1.2 Універсальний селектор для всього контенту */
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* 1.3 Селектори тегів для абзаців та блочних елементів */
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+/* 1.4 Селектор класу для зміни кольору першого та третього абзаців */
+.red-text {
+    color: red;
+}
+
+/* 1.5 Заборона перенесення рядка */
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* 1.6 Селектор ідентифікатора для курсиву та жирного тексту */
+#italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* 1.7 Додавання тіні до тексту другого абзацу та другого блочного елементу */
+.shadow-text {
+    text-shadow: 5px -5px 3px rgba(0, 128, 0, 0.7); /* зелена тінь */
+}
+
+/* 1.8 Стилі для першого блочного елементу */
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.upper-text {
+    text-transform: uppercase;
+}
+
+.indent {
+    text-indent: 50px;
+}
+
+/* 1.9 Стилі для другого блочного елементу */
+.wide-spacing {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}

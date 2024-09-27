@@ -1,0 +1,36 @@
+/* Стилізація заголовка */
+.title {
+    color: red;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Стилізація підзаголовка */
+.subtitle {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+}
+
+/* Стилізація тексту з інгредієнтами */
+.ingredients {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Стилізація горизонтальної лінії */
+.divider {
+    color: green;
+    width: 650px;
+    height: 6px;
+    margin: 20px auto;
+}
+
+/* Стилізація цитати */
+.quote {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
